@@ -1,8 +1,31 @@
 nav {
-    background-color: rgb(0, 139, 69);
+    background-color: darkred;
     padding: 5px;
 }
 
+img {
+    border: 1px solid black;
+}
+
 a {
-    color: white;
+    color: white
+}
+
+p {
+    color: black;
+    /* Un color crema/blanquecino */
+}
+
+main {
+    max-width: 840px;
+}
+
+aside {
+    width: 100px 150px;
+    margin: 1px;
+    border: 1px solid black;
+    padding: 100px;
+    background-color: rgba(154 19 23 / 0.82);
+    color: black;
+
 }
