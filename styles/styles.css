@@ -1,13 +1,13 @@
         nav {
             display: block;
             background-color: darkred;
-            padding: 10px;
+            padding: 5px;
             border: 1px solid black;
         }
 
         nav a {
-            color: white;
-            padding: 10px;
+            color: rgb(0, 0, 0);
+            padding: 5px;
             display: block;
 
         }
@@ -18,16 +18,16 @@
         }
 
         h1 {
-
-            color: #000;
+            color: #610c0c;
         }
 
         a {
-            color: white
+            color: rgb(255, 129, 129)
         }
 
         p {
             padding: 0;
+            color: #1f0000;
         }
 
         main {
@@ -35,16 +35,16 @@
         }
 
         main img {
-            width: 150;
+            width: 250px;
             height: auto;
-            border: #000;
+            border: #000000;
             padding: 10px;
             box-shadow: #333;
 
         }
 
         aside img {
-            width: 200px;
+            width: 300px;
             height: auto;
         }
 
@@ -53,14 +53,14 @@
             margin: 1rem;
             border: 1px solid black;
             padding: 1rem;
-            background-color: rgba(198 19 0 / 0.67);
-            color: #333;
+            background-color: rgba(163, 38, 26, 0.884);
+            color: #310101;
             text-align: center;
 
         }
 
         footer {
-            margin-top: 15px;
+            margin-top: 5px;
             border-top: 1px solid #000;
             text-align: center;
         }
