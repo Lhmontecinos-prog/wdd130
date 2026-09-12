@@ -38,8 +38,8 @@
             width: 250px;
             height: auto;
             border: #000000;
-            padding: 10px;
-            box-shadow: #333;
+            padding: 1px;
+            box-shadow: 2px 4px 6px 8px #300a0a;
 
         }
 
