@@ -1,66 +1,89 @@
-        nav {
-            display: block;
-            background-color: darkred;
-            padding: 5px;
-            border: 1px solid black;
-        }
+nav {
+    display: block;
+    background-color: darkred;
+    padding: 5px;
+    border: 1px solid black;
+}
 
-        nav a {
-            color: rgb(0, 0, 0);
-            padding: 5px;
-            display: block;
+nav a {
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    display: block;
 
-        }
+}
 
-        img {
-            border: 1px solid black;
-            background-repeat: repeat-x;
-        }
+img {
+    border: 1px solid black;
+    background-repeat: repeat-x;
+}
 
-        h1 {
-            color: #610c0c;
-        }
+h1 {
+    color: #610c0c;
+}
 
-        a {
-            color: rgb(255, 129, 129)
-        }
+a {
+    color: rgb(255, 0, 0)
+}
 
-        p {
-            padding: 0;
-            color: #1f0000;
-        }
+p {
+    padding: 0;
+    color: #1f0000;
+}
 
-        main {
-            max-width: fit-content;
-        }
+main {
+    max-width: fit-content;
+}
 
-        main img {
-            width: 250px;
-            height: auto;
-            border: #000000;
-            padding: 1px;
-            box-shadow: 2px 4px 6px 8px #300a0a;
+main img {
+    width: 250px;
+    height: auto;
+    border: #000000;
+    padding: 1px;
+    box-shadow: 2px 4px 6px 8px #300a0a;
+    float: right;
 
-        }
+}
 
-        aside img {
-            width: 200px;
-            height: auto;
-        }
+aside img {
+    width: 200px;
+    height: auto;
+}
 
-        aside {
-            width: 20rem;
-            margin: 1rem;
-            border: 1px solid black;
-            padding: 1rem;
-            background-color: rgba(163, 38, 26, 0.884);
-            color: #310101;
-            text-align: center;
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(3, 3, 3);
+    padding: 1rem;
+    background-color: rgba(163, 38, 26, 0.884);
+    color: #310101;
+    text-align: center;
 
-        }
+}
 
-        footer {
-            margin-top: 5px;
-            border-top: 1px solid #720000;
-            text-align: center;
-        }
+footer {
+    margin-top: 5px;
+    border-top: 1px solid #720000;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1%;
+    border: 1px solid rgba(247, 0, 0, 0.438);
+    padding: 1rem;
+    background-color: #f1525285;
+    color: #000;
+}
