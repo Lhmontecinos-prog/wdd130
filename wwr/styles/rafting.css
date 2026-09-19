@@ -1,63 +1,71 @@
 :root {
     --primary-color: #055a05;
-    /* forest green */
     --secondary-color: #f4a261;
-    /* warm sand */
     --accent1-color: #264653;
-    /* dark slate blue */
     --accent2-color: #e9c46a;
-    /* light golden yellow */
-    --heading-font: "Times New Roman", "Georgia", serif;
+    --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+/* Paso 4: reinicia márgenes, padding y box model */
 * {
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
-/*Body*/
+/* Paso 5 */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: #f5f5f5;
 }
 
+/* Paso 6 */
 header,
 main,
 footer {
     width: 840px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
-div img {
-    width: 2rem;
+/* HEADER */
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
 }
 
-header img,
+.logo {
+    font-size: 48px;
+}
+
 header nav {
-    display: inline;
+    display: flex;
+    gap: 8px;
 }
 
+header nav a {
+    background-color: white;
+    color: var(--accent1-color);
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+
+}
+
+/* Paso 7 */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-nav ul {
-    display: block;
-    background-color: #4FAEB5;
-    padding: 20px;
-}
-
-nav ul li {
-    box-sizing: border-box;
-    margin: 60px;
-    display: inline;
-
-}
-
+/* Paso 8 */
 nav,
 p,
 section,
@@ -66,41 +74,77 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia {
-    float: right;
-}
-
+/* HERO: Paso 1 */
 .hero {
     position: relative;
+    margin-top: 20px;
 }
 
-.hero img {
+/* HERO: Paso 2 */
+.hero > img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-h1 {
+/* HERO: Paso 3 */
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
+    opacity: 0.85;
     background-color: var(--accent1-color);
     color: #fff;
-    /* white text – make sure there is enough contrast with the background-color */
 }
 
-article {
+/* HERO: Paso 4 */
+.hero article {
     position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.88);
+    padding: 16px;
+    min-height: 150px;
 }
 
+/* HERO: Paso 5 */
 .hero article img {
     float: right;
     width: 125px;
+    margin-left: 18px;
+    border: 3px solid white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    background-color: white;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+    margin-bottom: 12px;
+}
+
+footer {
+    background-color: var(--accent1-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 12px;
+}
+
+/* Paso 9 */
+.socialmedia a {
+    text-decoration: none;
+    color: white;
 }
